@@ -17,12 +17,11 @@ var rootCmd = &cobra.Command{
 
 var startCmd = &cobra.Command{
 	Use:   "start",
-	Short: "TStarts an instance in the specified mode",
+	Short: "Starts an instance in the specified mode",
 	Run: func(cmd *cobra.Command, args []string) {
 		if viper.GetString("mode") == "private" {
 			start.PrivateMode()
 		}
-
 	},
 }
 

@@ -11,7 +11,7 @@ import (
 )
 
 func PrivateMode() {
-
+	// conf := config.GetValues()
 	logr := logger.NewZeroLogr().
 		WithName("minimal-aa").
 		WithValues("bundler_mode", "private")
